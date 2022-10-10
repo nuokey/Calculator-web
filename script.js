@@ -121,6 +121,8 @@ function equals() {
     if (operand == "divide") {
         number = Number(number1) / Number(number);
     }
+
+    number = Math.round(number * 100000000) / 100000000;
     
     output.innerHTML = number;
     console.log(number);
