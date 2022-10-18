@@ -13,12 +13,6 @@ function one() {
     output.innerHTML = number;
     console.log(number);
 }
-
-function one() {
-    number += "1"
-    output.innerHTML = number;
-    console.log(number);
-}
 function two() {
     number += "2"
     output.innerHTML = number;
