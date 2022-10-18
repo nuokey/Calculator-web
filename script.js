@@ -9,56 +9,69 @@ let output = document.querySelector(".output-text")
 console.log(output.value);
 
 function one() {
+    number += "1";
+    output.innerHTML = number;
+    console.log(number);
+}
+
+function one() {
     number += "1"
     output.innerHTML = number;
     console.log(number);
 }
 function two() {
-    number += "2"
+    number += "2";
     output.innerHTML = number;
     console.log(number);
 }
 function three() {
-    number += "3"
+    number += "3";
     output.innerHTML = number;
     console.log(number);
 }
 function four() {
-    number += "4"
+    number += "4";
     output.innerHTML = number;
     console.log(number);
 }
 function five() {
-    number += "5"
+    number += "5";
     output.innerHTML = number;
     console.log(number);
 }
 function six() {
-    number += "6"
+    number += "6";
     output.innerHTML = number;
     console.log(number);
 }
 function seven() {
-    number += "7"
+    number += "7";
     output.innerHTML = number;
     console.log(number);
 }
 function eight() {
-    number += "8"
+    number += "8";
     output.innerHTML = number;
     console.log(number);
 }
 function nine() {
-    number += "9"
+    number += "9";
     output.innerHTML = number;
     console.log(number);
 }
 
 function zero() {
-	number += "0"
+	number += "0";
     output.innerHTML = number;
     console.log(number);
 }
+
+function dot() {
+    number += ".";
+    output.innerHTML = number;
+    console.log(number);
+}
+
 function clearNumber() {
     number = "";
     output.innerHTML = number;
@@ -114,6 +127,8 @@ function equals() {
     if (operand == "divide") {
         number = Number(number1) / Number(number);
     }
+
+    number = Math.round(number * 100000000) / 100000000;
     
     output.innerHTML = number;
     console.log(number);
